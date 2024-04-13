@@ -1,30 +1,32 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 
 class CalculatorView extends StatelessWidget {
   const CalculatorView({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return const Padding(
-      padding: EdgeInsets.all(32.0),
+    return Padding(
+      padding: const EdgeInsets.all(32.0),
       child:  Column(
         children: [
-          DisplayOne(hint: "Enter First Number",),
-          SizedBox(
+          const DisplayOne(hint: "Enter First Number",),
+          const SizedBox(
             height: 30,
           ),
-          DisplayOne(hint: "Enter Second Number",),
-          Text(
+          const DisplayOne(hint: "Enter Second Number",),
+          const SizedBox(
+            height: 30,
+          ),
+          const Text(
             "Result: 0", 
           style: TextStyle(
-            fontSize: 24, 
+            fontSize: 40, 
             fontWeight: 
             FontWeight.bold
             ),
           ),
-          Spacer(),
+          const Spacer(),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
